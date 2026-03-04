@@ -1,0 +1,361 @@
+:root {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: #f1f5ff;
+  background-color: #030711;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #02040c;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(3, 7, 17, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4vw;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 1.1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+nav a {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav .cta {
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  padding: 3rem 4vw 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #111828, #1d4ed8 60%, #0f172a);
+  border-radius: 36px;
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  box-shadow: 0 30px 60px rgba(10, 20, 55, 0.6);
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  margin: 1rem 0;
+}
+
+.hero-copy p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.eyebrow {
+  letter-spacing: 0.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.85rem 1.8rem;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn.primary {
+  background: #fcd34d;
+  color: #0b1220;
+}
+
+.btn.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #f1f5ff;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
+.projects,
+.systems,
+.tech-stack,
+.testimonials {
+  padding: 2.5rem;
+  border-radius: 32px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 40px rgba(2, 6, 23, 0.45);
+}
+
+.service-grid,
+.project-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.system-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.system-card {
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(2, 6, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.system-card span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.service-card,
+.project-card {
+  background: rgba(2, 6, 23, 0.7);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.service-card .meta,
+.project-card span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.stack-grid div {
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  font-weight: 600;
+}
+
+.testimonial-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.testimonial {
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feedback-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feedback-form h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.feedback-form p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.feedback-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.rating-inputs {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rating-inputs .star {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.rating-inputs .star span {
+  font-size: 1.35rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.rating-inputs input {
+  display: none;
+}
+
+.rating-inputs input:focus-visible + span {
+  color: #fcd34d;
+}
+
+.rating-inputs span {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.rating-inputs span.filled {
+  color: #fcd34d;
+  transform: scale(1.1);
+}
+
+.rating-inputs .star:hover {
+  border-color: rgba(252, 211, 77, 0.8);
+}
+
+.feedback-form textarea {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+  color: #f8fafc;
+  padding: 0.9rem 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #fcd34d;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(135deg, #111827, #1d4ed8);
+  padding: 2rem 2.5rem;
+  border-radius: 30px;
+  box-shadow: 0 25px 45px rgba(29, 78, 216, 0.35);
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem 4vw 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero,
+  .services,
+  .projects,
+  .tech-stack,
+  .testimonials,
+  .cta {
+    padding: 1.75rem;
+  }
+}
